@@ -1,3 +1,4 @@
+
 @import url('https://fonts.cdnfonts.com/css/josefin-sans');
 *{
     padding: 0;
@@ -425,4 +426,433 @@ button {
         padding: 20mm; /* Prevents content from going outside */
         box-sizing: border-box;
     }
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* stylying -html section*/
+html{
+    color: #222;                             
+
+    font-family: 'josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+/* stylying - body section*/
+body {
+    padding: 0rem 0rem ;
+
+    background: linear-gradient(#888, #888
+    50%, hwb(24 44% 2%) 50%, hwb(29 45% 2%))
+
+
+}
+/* stylying  h1,h2,h3 */
+h1{
+    font-size:1.5rem;
+
+}
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-top: .70px solid #888;
+    border-bottom: .80px solid #888; 
+    padding: .50rem 0;
+    margin-bottom: 1rem ;
+
+}
+h4 {
+    font-size: .80rem;
+}
+
+h3{
+    font-size: .70rem ;
+    text-transform: uppercase;
+    color: salmon;
+    margin-bottom: 1rem;
+    
+}
+
+section + section {
+    margin-top: 2rem;
+
+}
+
+li + li {
+    margin-top: .90rem;
+ 
+    
+}
+ a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.60rem;
+ }
+ ul{
+    list-style: none;
+ }
+
+ /* Profile Styling */
+
+ .profile {
+    text-align: center;
+
+    
+
+ }
+ .profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+   margin-top: .50rem;
+   
+ }
+
+.profile p {
+    color: #888;
+    margin-bottom:2rem;
+    font-size: 1rem;
+    
+}
+
+.description {
+    font-size: .80rem;
+    
+
+}
+/* stylying -contact section , skills and time line*/
+
+.contact ul {
+    margin-top: -1rem;
+    text-align:left ;
+    text-transform: uppercase;
+    padding: .80rem;
+    color: #888;
+    border-bottom: 1.5px solid #888;
+  }
+
+
+.social > ul {
+    line-height: 1;
+    font-size: .70rem;
+}
+
+/* Add margin to the visitors section */
+.social p {
+    margin-bottom: 20px;  /* Adjust this value to control the space */
+}
+
+/* Add margin to the download button */
+#download-pdf {
+    margin-top: 20px;
+    margin-left: 0; 
+    text-align: left; /* Adjust this value to control the space */
+}
+
+
+
+.skills > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.8rem;
+    line-height: 1;
+    
+    
+    
+}
+
+
+.timeline .event {
+    display: grid;
+    grid-template-columns: 5ch 1fr;
+}
+
+
+.timeline .content {
+    border-left: 1px solid #888;
+    padding-left: 2rem;
+    margin-left: 1rem;
+
+}
+
+.content > h3 + p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* stylying -resume*/
+.resume{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap:4rem;
+    background-color: white;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+.section > professional {
+    font-size:1rem;
+}
+.experience {
+    font-size: .80rem;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .resume {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Button Styling */
+.toggle-btn {
+    padding: 4px 8px;
+    margin: 10px;
+    cursor: pointer;
+    background-color:lightslategray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    background-color:salmon;
+}
+
+.contact i {
+    margin-right: 10px;
+    color: #007bff; 
+    vertical-align: middle;
+}
+
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#downloadPDF {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#toggleDarkMode {
+    background-color: #555;
+    color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+.dark-mode a {
+    color: #1e90ff;
+}              
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+    padding-bottom: 60px; /* Avoid footer overlap */
+    background-color: #888;
+}
+
+/* Resume Container */
+.resume {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Columns */
+.column {
+    flex: 1;
+    min-width: 300px; /* Prevents too-small columns */
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Contact & Social Media */
+.contact ul,
+.social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li,
+.social li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Timeline (Experience & Education) */
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.duration {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:lightslategrey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Responsive Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#downloadPDF {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#toggleDarkMode {
+    background-color:#fff;
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color:#888;
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color:#fff;
+
+}
+
+.dark-mode a {
+    color: #1e90ff;
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+
+
+/* Mobile Screens (Up to 600px) */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding-bottom: 80px;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+/* Tablets (600px - 1024px) */
+@media (max-width: 1024px) {
+    .resume {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+    }
+}
+
+/* Desktops (Above 1024px) */
+@media (min-width: 1025px) {
+    .resume {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .column {
+        flex: 2;
+        max-width: 500px;
+    }
+}
+
+@media print {
+    body {
+        margin: 0.50;
+        padding: 0.50n;
+    }
+    .resume-content {
+        width: 210mm; /* A4 width */
+        min-height: 297mm; /* A4 height with flexibility */
+        padding: 20mm; /* Prevents content from going outside */
+        box-sizing: border-box;
+    }
+    
 }
