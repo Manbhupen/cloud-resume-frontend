@@ -1,0 +1,30 @@
+
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main  # Or whatever your main branch is called
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1  # Change this to your AWS region
+
+    - name: Deploy to S3
+      run: |
+        aws s3 cp . s3://himaltiger25--recursive  # Replace with your S3 bucket name
+
+    - name: Invalidate CloudFront cache
+      run: |
+        aws cloudfront create-invalidation --distribution-id ECI7PR6TRJOJY --paths "/*" # Replace with your CloudFront distribution ID
