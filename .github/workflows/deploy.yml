@@ -23,9 +23,8 @@ jobs:
     
     
     - name: Deploy to S3
-      run: |
-        aws s3 cp . s3://himaltiger25--recursive  # Replace with your S3 bucket name
-
+      run: aws s3 cp . s3://himaltiger25 --recursive
+      
     - name: Invalidate CloudFront cache
       run: |
         aws cloudfront create-invalidation --distribution-id ECI7PR6TRJOJY --paths "/*" # Replace with your CloudFront distribution ID
