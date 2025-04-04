@@ -23,7 +23,7 @@ jobs:
     
     
     - name: Deploy to S3
-      run: aws s3 cp . s3://himaltiger25 --recursive
+      run: aws s3 cp . s3://himaltiger25 
       
     - name: Invalidate CloudFront cache
       run: |
